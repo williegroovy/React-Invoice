@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
+import InvoiceDetail from './invoice/InvoiceDetail';
+
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div className="container">
+				<InvoiceDetail className="invoice"/>
+			</div>
     );
   }
 }

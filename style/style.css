@@ -1,0 +1,104 @@
+.invoice {
+    margin-top: 30px;
+}
+
+.invoice-origin address {
+   font-size: 1em;
+}
+
+.amount-due {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.amount-due > div {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+}
+.invoice-summary > table > tbody > tr td {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.invoice-body {
+    margin-top: 50px;
+    border: 1pt solid rgba(0,0,0,.3);
+    padding: 10px;
+}
+
+.invoice-btn-group > button {
+    margin-right: 5px;
+}
+
+.invoice-itemization {
+    margin-bottom: 50px;
+}
+.invoice-itemization > table > tfoot {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.invoice-itemization > table > tfoot td:first-child {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.invoice-itemization > table{
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.invoice-bill-to {
+    margin-bottom: 30px;
+}
+
+.invoice-btn-group > button {
+    width: 100px;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 575px) {
+    .invoice-summary > table > tbody > tr td {
+        padding-top: 0;
+        padding-right: 5px;
+    }
+
+    .invoice-summary > table > tbody > tr td:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .invoice-itemization > table > thead tr th:first-child {
+        display: none;
+    }
+
+    .invoice-itemization > table > tbody > tr td:first-child {
+        display: none;
+    }
+
+    .invoice-itemization > table > tfoot > tr td:first-child {
+        display: none;
+    }
+
+    .invoice-header div {
+        margin: auto;
+    }
+
+    .invoice > .flex-sm-row {
+        flex-direction: column !important;
+    }
+
+}
+

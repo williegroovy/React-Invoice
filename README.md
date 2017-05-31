@@ -1,10 +1,9 @@
-# ReduxSimpleStarter
+# React-Invoice
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
-### Getting Started
+### Goal
 
-There are two methods for getting started with this repo.
+Awesome React-Redux invoice system.
 
 #### Familiar with Git?
 Checkout this repo, install dependencies, then start the gulp process with the following:
