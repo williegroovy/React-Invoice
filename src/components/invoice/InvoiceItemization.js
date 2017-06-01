@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class InvoiceItemization extends React.Component {
+export default class InvoiceItemization extends Component {
+
+	update(event) {
+		console.log(event);
+		console.log('Change: ', event.target.value);
+	}
+
 	render() {
 		return(
 			<div className="invoice-itemization">
@@ -15,7 +21,7 @@ export default class InvoiceItemization extends React.Component {
 					</thead>
 					<tbody>
 					<tr>
-						<td>Created a web app for Mr. Locomotive.</td>
+						<td contentEditable={true} onBlur={this.update.bind(this)}>Created a web app for Mr. Locomotive.</td>
 						<td>15</td>
 						<td>$90.00</td>
 						<td>$1350.00</td>

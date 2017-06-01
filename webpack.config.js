@@ -1,3 +1,5 @@
+//let resolvePreset = require('webpack-babel-link').resolvePreset(require);
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -12,7 +14,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['react', 'es2015', 'stage-1']
+        presets: ['react', 'es2015', 'stage-1']//.map(resolvePreset)
       }
     }]
   },

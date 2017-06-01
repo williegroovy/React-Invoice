@@ -102,3 +102,11 @@ hr {
 
 }
 
+.row > div, .row > input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
